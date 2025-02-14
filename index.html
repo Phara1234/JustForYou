@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Login</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('IMG_6441.JPG');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            background-color: pink;
+            font-family: Arial, sans-serif;
+        }
+        .login-form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .login-form h2 {
+            margin-bottom: 20px;
+        }
+        .login-form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .login-form input[type="submit"] {
+            background-color: red;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .login-form input[type="submit"]:hover {
+            background-color: darkred;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.querySelector('form');
+            form.addEventListener('submit', function(event) {
+                const passwordInput = form.querySelector('input[name="password"]');
+                if (passwordInput.value !== '090125') {
+                    event.preventDefault();
+                    alert('Sorry Baby Your password is Khos hz .The password  is we first day. Baby b sl oun ');
+                   
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="login-form">
+        <h2>Valentine's Day Login</h2>
+        <form action="hi.html" method="post">
+            <input type="password" name="password" placeholder="Enter Password" required>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</body>
+</html>
